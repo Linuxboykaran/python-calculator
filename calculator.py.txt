@@ -1,0 +1,19 @@
+def add(a, b):
+    return a + b
+
+def sub(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    return a / b
+
+print("Choose operation: + - * /")
+op = input("Operation: ")
+a = float(input("A: "))
+b = float(input("B: "))
+
+operations = {"+": add, "-": sub, "*": mul, "/": div}
+print("Result:", operations[op](a, b))
